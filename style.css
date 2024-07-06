@@ -1,0 +1,103 @@
+/* Reset default margin, padding, and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Main container styling */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  color: #fff;
+  padding: 10px;
+}
+
+/* Calculator container styling */
+.calculator {
+  width: 100%;
+  max-width: 600px;
+  margin: 10% auto;
+}
+
+/* Main heading styling */
+.calculator h1 {
+  font-size: 60px;
+}
+
+/* Highlighted span within the heading */
+.calculator h1 span {
+  color: #ffff76;
+}
+
+/* Input box container styling */
+.input-box {
+  margin: 40px 0;
+  padding: 35px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+/* Date input field styling */
+.input-box input {
+  flex: 1;
+  margin-right: 20px;
+  padding: 14px 20px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Calculate button styling */
+.input-box button {
+  background: #ffff76;
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Custom styling for date input field's calendar icon */
+.input-box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  position: absolute;
+  background-size: 30px;
+  background-position: calc(100% - 10px);
+}
+
+/* Styling for the result paragraph */
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Footer container styling for the "Made by" message */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: bold;
+}
